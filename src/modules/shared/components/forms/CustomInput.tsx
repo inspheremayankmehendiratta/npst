@@ -1,3 +1,4 @@
+"use client";
 import React, { useMemo, useState } from "react";
 import {
     Stack,
@@ -10,7 +11,7 @@ import {
     Theme,
     useTheme,
 } from "@mui/material";
-import { Visibility, VisibilityOff } from "@mui/icons-material";
+import { Eye, EyeOff } from "lucide-react";
 
 type CustomInputProps = {
     id: string;
@@ -115,7 +116,7 @@ const CustomInput: React.FC<CustomInputProps> = ({
                         },
                     }}
                 >
-                    {showPassword ? <VisibilityOff fontSize="small" /> : <Visibility fontSize="small" />}
+                    {showPassword ? <EyeOff fontSize="small" /> : <Eye fontSize="small" />}
                 </IconButton>
             );
         }

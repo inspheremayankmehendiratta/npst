@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef, useImperativeHandle, forwardRef } from 'react';
 
 type CharMap = 'upper' | 'lower' | 'numbers' | 'special_char' | '';
